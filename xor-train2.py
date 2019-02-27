@@ -12,6 +12,7 @@ xor_df = pd.DataFrame(xor_input)
 xor_data = xor_df.loc[:,0:1]
 xor_label = xor_df.loc[:,2]
 
+print(xor_label)
 clf = svm.SVC(gamma='auto')
 clf.fit(xor_data, xor_label)
 pre = clf.predict(xor_data)
