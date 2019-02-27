@@ -2,7 +2,7 @@ from selenium import webdriver
 
 url = "http://www.naver.com/"
 
-browser = webdriver.Chrome()
+browser = webdriver.PhantomJS()
 
 browser.implicitly_wait(3)
 
